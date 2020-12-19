@@ -1,0 +1,124 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+body {
+  background-image: url(./images/bg-body.png);
+}
+.navbar-expand-lg {
+  display: none;
+}
+
+div.container {
+  /* object-fit: cover; */
+  display: flex;
+  max-width: 1180px;
+  flex-direction: column;
+  justify-content: center;
+}
+
+.container .logo {
+  align-self: center;
+  width: 180px;
+  border-radius: 180px;
+  border: 1px solid #949494;
+}
+
+.col-sm-12 {
+  display: flex;
+  justify-content: center;
+  margin: 15px 0 30px 0;
+}
+
+nav.btn-group {
+  display: flex;
+  width:100%;
+}
+
+/* não consigo alterar as medidas e posicionamento dos botôes conforme wireframe */
+.btn.btn-secondary {
+  max-width: 180px 50px;
+  margin: 0 20px 20px 0;
+}
+
+.btn.btn-secondary.last {
+  margin: 0 0 20px 0px;
+}
+
+main {
+  display: flex;
+}
+
+main img {
+  width: 100%;
+  margin-bottom: 30px;
+}
+
+section {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: space-between;
+}
+
+section .card {
+  width: 30%;
+  margin-bottom: 30px;
+}
+
+footer .menu {
+    height: 100px;
+    background-color: #b40003;
+    border-radius: 15px 15px 0 0;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+ul li {
+  color: white;
+}
+
+
+footer .menu li {
+    display: flex;
+    margin: 10px;
+    justify-content: space-evenly;
+    text-decoration: none;
+}
+
+footer .menu a {
+  text-decoration: none;
+  color: white;
+  
+}
+
+dl, ol, ul {
+    margin-bottom:0;
+}
+
+ol, ul {
+    padding-left:0;
+}
+
+/* responsividade */
+
+@media (max-width: 768px){
+    section .card {
+        width: 49%;
+    }
+}
+
+@media (max-width: 375px){
+    section .card {
+        width: 100%;
+    }
+    .navbar-expand-lg {
+      display: flex;
+      justify-content: center;
+    }
+    nav.btn-group {
+      display: none;
+    }
+}
